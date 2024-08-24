@@ -1,0 +1,2 @@
+#!/Users/matiast./Desktop/akasa/inventory-backend/venv/bin/python3.12
+from Mypackage import Myshell

@@ -1,0 +1,10 @@
+CREATE TABLE contratos (
+  id VARCHAR(36) PRIMARY KEY DEFAULT (UUID()),
+  numero_contrato VARCHAR(50) UNIQUE,
+  fecha_inicio DATE,
+  fecha_fin DATE,
+  archivo_path VARCHAR(255),
+  created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
+  updated_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP ON UPDATE CURRENT_TIMESTAMP,
+  version INT DEFAULT 1
+);
